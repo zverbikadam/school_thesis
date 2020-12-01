@@ -1,1 +1,9 @@
 \chapter{SOAP a XML}
+Ako bolo spomenuté v časti \textit{\ref{soapRef}}, pojem SOAP je skratka pre \textit{Simple Object Access Protocol}, čo v preklade znamená \textit{jednoduhý protokol pre prístup  objektom}. Aplikáciam umožňuje komunikovať medzi sebou za použitia prevažne \textit{HTTP} a \textit{XML}. V zásade predstavuje paradigmu jednosmernej výmeny správ medzi jednotlivými uzlami bez stavu (stateless). Kombináciou jednosmerných výmen s funkciami poskytovanými základným transportným protokolom a (alebo) špecifickými informáciami aplikácie, možno SOAP použiť na vytvorenie zložitejších interakcií, ako je požiadavka - odpoveď, požiadavka - viacnásobná odpoveď atď. \cite{SoapRestComparison}.
+\section{Vznik protokolu SOAP}
+Už na začiatku, ako vzniklo WWW, bolo možné na webservere zavolať program a predať mu textové parametre vďaka URL adrese. Jednoducho sa na koniec URL adresy pridal \textit{?} a zaň sa uviedli názvy parametrov a ich hodnoty, oddelené znakom \textit{\&}. Keďže je ale URL adresa limitovaná dĺžkou, musel sa vymyslieť iný prístup. Bola vymyslená metóda \textit{POST} protokolu \textit{HTTP}, ktorá parametre predáva v tele \textit{HTTP} požiadavku. Metódou \textit{POST} je možné posielať akékoľvek dáta akejkoľvek dĺžky. Štandardizovaný bol ale typ nazvaný \textit{application/x-www-form-urlencoded}, ktorého tvar je zhodný s tvarom parametrov predávaných v URL adrese.
+
+Neskôr začali prehliadače podporovať aj typ \textit{multipart/form-data}, ktorý umožňuje k textovým parametrom pridať obsah súboru.
+
+S príchodom jazyka \textit{XML} bolo iba otázkou času, než niekoho napadlo posielať si metódou \textit{POST} dáta v \textit{XML}. \textit{XML} umožňuje zapísať lubovoľne zložité štruktúrované dáta do textového súboru platformovo nezávislým zbôsobom. Výhoda je, že sa predávané dáta nemusia obmedzovať na text, ale je možné predávať si zložité objekty a aj kolekcie objektov \cite{WebServicesIntro}.
+
