@@ -66,9 +66,16 @@ XML Infoset poskytuje spôsob, ako opísať dokument XML  pomocou XSD schémy. N
 
 SOAP 1.2 má množstvo zmien v syntaxi a poskytuje ďalšiu, objasnenú sémantiku od tých, ktoré sú popísané v SOAP 1.1. Tieto zmeny syntaxe uvádza a popisuje dokument SOAP 1.2 Primer \cite{Versions}.
 
-\section{Porovnanie SOAP a REST}
+\section{SOAP a REST}
+Mnoho ľudí dnes porovnáva SOAP a REST, snaží sa zistiť, ktorý je lepší, ktorý použiť v ich aplikácií. Obe sú vlastne odpoveďou na rovnakú otázku: Ako pristúpiť k webovým službám. Samozrejme, aj keď slúžia v podstate na to isté, sú medzi nimi nejaké rozdiely a každý má svoje výhody aj nevýhody.
+
+\subsection{Porovnanie protokolu SOAP a REST}
 \begin{itemize}
-\item REST používa pre komunikáciu protokol HTTP (popr. HTTPS), pričom SOAP môže použiť takmer ktorýkoľvek transportný protokol (SMTP, JMS...)
+\item SOAP je štandartným protokolom pre prístup k webovým službám, ktorý tu je už dlho. SOAP má zložitú a zdĺhavú syntax, čo rieši práve REST, ktorý poskytuje jednoduchší spôsob prístupu k webovým službám.
+\item REST používa pre komunikáciu protokol HTTP/HTTPS, pričom SOAP môže použiť takmer ktorýkoľvek transportný protokol (HTTP, SMTP, JMS...)
+\item SOAP je oveľa prísnejší na schému správ ako REST. Pravidlá sú v SOAP veľmi dôležité, pretože bez nich nemôžeme dosiahnuť žiadny level štandardizácie. REST je naopak jednoduchší na použitie a je flexibilnejší.
+\item SOAP používa ako formát XML, pričom REST môže použiť rôzne formáty (napr. JSON), čím umožňuje posielanie kratších správy, vďaka čomu je efektívny.
+\item SOAP funguje dobre v distribuovaných podnikových prostrediach. REST predpokladá priamu komunikáciu medzi dvoma bodmi.
 \end{itemize}
 
 
