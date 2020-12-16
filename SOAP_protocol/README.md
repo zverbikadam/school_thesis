@@ -2,9 +2,9 @@
 
 SOAP protokol na výmenu správ založených na XML
 
-# Predmet
+# Predmet / Subject
 
-Počítačom integrovaná výroba [PIV]
+Počítačom integrovaná výroba [PIV] / Computer integrated manufacturing [CIM]
 
 # Typ práce
 
